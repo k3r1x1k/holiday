@@ -1,3 +1,12 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Roboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
 *,
 ::before,
 ::after {
@@ -6,7 +15,8 @@
 
 .container {
     padding: 0 20px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    outline: rebeccapurple solid 1px;
 }
 
 .header {
@@ -28,19 +38,31 @@
     gap: 4px;
 }
 
-/* .header-button {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 13px;
-    text-align: center;
-    color: #fff;
+.header-link{
+        font-family: var(--font-family);
+font-weight: 700;
+font-size: 20px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+
+.header-button {
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 13px;
+text-align: center;
+color: #fff;
+        background-color: transparent;
+border: none;
 }
 
 .current{
     border-radius: 16px;
     border: #fff 2px solid;
     
-} */
+}
 
 .hero-section {
     padding-top: 214px;
@@ -83,9 +105,11 @@
     border-radius: 16px;
 }
 
+=========================================================
+
 @media screen and (min-width: 768px){
     .container {
-    width: 768px;
+    width: 768px; outline: greenyellow solid 1px;
 }
 
 .header {
@@ -111,19 +135,16 @@ color: #fff;
 
 }
 
-/* .header-button {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 13px;
-    text-align: center;
-    color: #fff;
+.header-button {
+
+
 }
 
 .current{
     border-radius: 16px;
     border: #fff 2px solid;
-    
-} */
+    padding: 11px 6px;
+}
 
 .hero-section {
     background-image: url(./imges/hero-bgr-tb.jpg);
@@ -134,14 +155,102 @@ color: #fff;
 }
 
 .hero-title {
-    
+        font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 22px;
 }
 
 .hero-paragraph {
-
+padding-bottom: 44px;
 }
 
 .hero-btn {
+font-size: 14px;
+padding: 12px 10px;
 
+}
+}
+
+===========================================================
+
+@media screen and (min-width:1440px){
+    .container{
+        width: 940px;
+        outline: #ff4e50 solid 1px;
+    }
+
+.header {
+
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 120px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-link{
+        font-family: var(--font-family);
+font-weight: 700;
+font-size: 20px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+
+.header-button {
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 13px;
+text-align: center;
+color: #fff;
+        background-color: transparent;
+border: none;
+}
+
+.current{
+    border-radius: 16px;
+    border: #fff 2px solid;
+    
+}
+
+.hero-section {
+
+    padding-bottom: 246px;
+    background-image: url(./imges/header-bg-desk.jpg);
+
+}
+
+.hero-title {
+    font-size: 52px;
+    margin-bottom: 36px;
+}
+
+.hero-paragraph {
+    font-size: 24px;
+    margin-bottom: 44px;
+}
+
+.hero-btn {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff4e50;
+    padding: 12px 38px;
+    border-radius: 16px;
 }
 }
