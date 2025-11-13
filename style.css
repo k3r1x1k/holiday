@@ -14,7 +14,7 @@ a{
 }
 
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -237,6 +237,8 @@ color: #fff;
   }
 }
 
+ 
+
 .hero-title {
         font-family: var(--font-family);
     font-weight: 700;
@@ -270,13 +272,7 @@ padding: 12px 10px;
         outline: #ff4e50 solid 1px;
     }
 
-    @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-   .hero-section{
-    background-image: url("./imges/hero-bg-deskx2.jpg");
-  }}
+
 
 .header {
 
@@ -327,6 +323,14 @@ border: none;
     background-image: url(./imges/header-bg-desk.jpg);
 
 }
+
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+   .hero-section{
+    background-image: url("./imges/hero-bg-deskx2.jpg");
+  }}
 
 .hero-title {
     font-size: 52px;
